@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+public class AuthPage {
     private final WebDriver driver;
 
     @FindBy (id = "user-name")
@@ -20,7 +20,7 @@ public class HomePage {
     @FindBy (xpath = "//div/h3")
     private WebElement errorMessage;
 
-    public HomePage(WebDriver driver) {
+    public AuthPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
